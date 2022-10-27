@@ -1,0 +1,228 @@
+@media (min-width : 320px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 20vw;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        z-index: 1000;
+    }
+
+    .left-header {
+        height: 100%;
+    }
+
+    .logo {
+        height: 7vw;
+        width: 40vw;
+        cursor: pointer;
+        position: relative;
+        top: 50%;
+        left: 3%;
+        transform: translateY(-50%);
+        z-index: 1000;
+    }
+
+    .right-header {
+        background-color: #000;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+    }
+
+    .nav-btn {
+        position: fixed;
+        top: 7vw;
+        right: 7vw;
+        width: 7vw;
+        height: 5vw;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .header-menus {
+        height: 100vw;
+        text-align: left;
+        list-style: none;
+        font-size: 5vw;
+        position: relative;
+        top: 50%;
+        transform: translateY(-40%);
+    }
+
+    .menu {
+        all: unset;
+        cursor: pointer;
+        color: #FFF;
+        font-size: 6vw;
+        font-weight: 500;
+        text-decoration: none;
+        margin: 0 0 10vw 0;
+    }
+
+    .menu:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 0.5vw;
+    }
+}
+
+@media (min-aspect-ratio: 5/6) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 10vw;
+    }
+
+    .logo {
+        height: 4vw;
+        width: 25vw;
+        cursor: pointer;
+        position: relative;
+        top: 50%;
+        left: -7%;
+    }
+
+    .nav-btn {
+        position: fixed;
+        top: 3vw;
+        right: 7vw;
+        width: 5vw;
+        height: 3.5vw;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .header-menus {
+        top: 50%;
+        transform: translateY(-20%);
+    }
+
+    .menu {
+        font-size: 4vh;
+        margin: 0 0 4vh 4vw;
+    }
+}
+
+@media (min-width : 1200px) {
+    .header {
+        width: 100vw;
+        height: 5vw;
+        grid-auto-rows: 5vw;
+        grid-template-columns: 20% 80%;
+    }
+
+    .left-header {
+        height: 100%;
+        padding: 0 0 0 0vw;
+    }
+
+    .logo {
+        height: 2.5vw;
+        width: 6vw;
+        margin: 0vw 16vw;
+    }
+
+    .right-header {
+        all: unset;
+        position: relative;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .header-menus {
+        height: 5vw;
+        font-size: 1vw;
+        padding: 0;
+        margin: .4vw 0;
+    }
+
+    .dropdown {
+        display: inline-block;
+        margin: 0 0 0vw 2vw;
+        text-align: center;
+    }
+
+    .drop-btn {
+        color: #FFF;
+        font-size: 1.2vw;
+        font-weight: 700;
+        margin: 1.7vw 0 0 0;
+        left: -26vw;
+    }
+
+    .drop-btn:hover {
+        text-decoration-thickness: 0.2vw;
+    }
+
+    .dropdown-img {
+        width: 0.7vw;
+        margin: 0 .5vw;
+    }
+    
+    .dropdown-content {
+        position: absolute;
+        width: 12vw;
+        left: 5vw;
+        border-radius: 1vw;
+        padding: 1vw 0;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .comp {
+        left: 13vw;
+    }
+
+    .conn {
+        left: 22vw;
+    }
+
+    .hidden {
+        z-index: 1000;
+    }
+
+    .dropdown-link {
+        color: hsl(240, 10%, 16%);
+        font-size: 1vw;
+        left: 1.5vw;
+        margin: 0.6vw 0;
+        transform: unset;
+    }
+
+    .line {
+        display: none;
+    }
+    
+    .login {
+        position: relative;
+        color: #FFF;
+        bottom: 1.5vw;
+        left: 15vw;
+        width: 2vw;
+        font-size: 1.2vw;
+    }
+
+    .sign {
+        position: relative;
+        background: #FFF;
+        bottom: 4.9vw;
+        left: 24vw;
+        border-radius: 80px;
+        color: hsl(353, 100%, 62%);
+        font-size: 1.2vw;
+        padding: .8vw 2.3vw;
+        margin: 1vw;
+    }
+
+    .sign:hover {
+        color: #FFF;
+    }
+}
