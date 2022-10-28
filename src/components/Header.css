@@ -145,10 +145,14 @@
         margin: .4vw 0;
     }
 
-    .dropdown {
+    .header-menus li {
         display: inline-block;
+    }
+
+    .menu {
         margin: 0 0 0vw 2vw;
         text-align: center;
+        font-size: 2vw;
     }
 
     .drop-btn {

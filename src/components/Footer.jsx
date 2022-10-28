@@ -10,23 +10,23 @@ function Footer() {
     return (
         <>
             <div className="footer">
-                <div className="foote-left">
+                <div className="footer-left">
                     <img className="footer-logo" src={logo} alt="footer-logo"></img>
-                    <ul className="header-menus">
+                    <ul className="footer-menus">
                         <li>
-                            <button className="menu">About</button>
+                            <button className="foot-menu">About</button>
                         </li>
                         <li>
-                            <button className="menu">Careers</button>
+                            <button className="foot-menu">Careers</button>
                         </li>
                         <li>
-                            <button className="menu">Events</button>
+                            <button className="foot-menu">Events</button>
                         </li>
                         <li>
-                            <button className="menu">Products</button>
+                            <button className="foot-menu">Products</button>
                         </li>
                         <li>
-                            <button className="menu">Support</button>
+                            <button className="foot-menu">Support</button>
                         </li>
                     </ul>
                 </div>

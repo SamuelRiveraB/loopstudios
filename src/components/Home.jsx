@@ -29,25 +29,25 @@ function Home() {
             if (window.innerWidth < 1200) {
                 document.querySelector(".banner").style.backgroundImage = 'url(' + banner + ')';
                 document.querySelector(".first-left-img").src = firstLeft;
-                document.querySelector(".gallery1-img").src = gallery1;
-                document.querySelector(".gallery2-img").src = gallery2;
-                document.querySelector(".gallery3-img").src = gallery3;
-                document.querySelector(".gallery4-img").src = gallery4;
-                document.querySelector(".gallery5-img").src = gallery5;
-                document.querySelector(".gallery6-img").src = gallery6;
-                document.querySelector(".gallery7-img").src = gallery7;
-                document.querySelector(".gallery8-img").src = gallery8;
+                document.querySelector(".gall1").src = gallery1;
+                document.querySelector(".gall2").src = gallery2;
+                document.querySelector(".gall3").src = gallery3;
+                document.querySelector(".gall4").src = gallery4;
+                document.querySelector(".gall5").src = gallery5;
+                document.querySelector(".gall6").src = gallery6;
+                document.querySelector(".gall7").src = gallery7;
+                document.querySelector(".gall8").src = gallery8;
             } else {
                 document.querySelector(".banner").style.backgroundImage = 'url(' + bannerDesk + ')';
                 document.querySelector(".first-left-img").src = firstLeftDesk;
-                document.querySelector(".gallery1-img").src = gallery1Desk;
-                document.querySelector(".gallery2-img").src = gallery2Desk;
-                document.querySelector(".gallery3-img").src = gallery3Desk;
-                document.querySelector(".gallery4-img").src = gallery4Desk;
-                document.querySelector(".gallery5-img").src = gallery5Desk;
-                document.querySelector(".gallery6-img").src = gallery6Desk;
-                document.querySelector(".gallery7-img").src = gallery7Desk;
-                document.querySelector(".gallery8-img").src = gallery8Desk;
+                document.querySelector(".gall1").src = gallery1Desk;
+                document.querySelector(".gall2").src = gallery2Desk;
+                document.querySelector(".gall3").src = gallery3Desk;
+                document.querySelector(".gall4").src = gallery4Desk;
+                document.querySelector(".gall5").src = gallery5Desk;
+                document.querySelector(".gall6").src = gallery6Desk;
+                document.querySelector(".gall7").src = gallery7Desk;
+                document.querySelector(".gall8").src = gallery8Desk;
             }
         }
         window.addEventListener('resize', responsiveImgs);
@@ -74,42 +74,42 @@ function Home() {
                     </div>
                 </div>
                 <h1 className="creations">OUR CREATIONS</h1>
+                <div className="second-cont">
+                    <div className="gallery">
+                        <img className="gallery-img gall1" src="" alt="gallery1-img"></img>
+                        <h2 className="gallery-title">DEEP EARTH</h2>
+                    </div>
+                    <div className="gallery">
+                        <img className="gallery-img gall2" src="" alt="gallery2-img"></img>
+                        <h2 className="gallery-title">NIGHT ARCADE</h2>
+                    </div>
+                    <div className="gallery">
+                        <img className="gallery-img gall3" src="" alt="gallery3-img"></img>
+                        <h2 className="gallery-title">SOCCER TEAM VR</h2>
+                    </div>
+                    <div className="gallery">
+                        <img className="gallery-img gall4" src="" alt="gallery4-img"></img>
+                        <h2 className="gallery-title grid">THE GRID</h2>
+                    </div>
+                    <div className="gallery">
+                        <img className="gallery-img gall5" src="" alt="gallery5-img"></img>
+                        <h2 className="gallery-title">FROM UP ABOVE VR</h2>
+                    </div>
+                    <div className="gallery">
+                        <img className="gallery-img gall6" src="" alt="gallery6-img"></img>
+                        <h2 className="gallery-title">POCKET BOREALIS</h2>
+                    </div>
+                    <div className="gallery">
+                        <img className="gallery-img gall7" src="" alt="gallery7-img"></img>
+                        <h2 className="gallery-title">THE CURIOSITY</h2>
+                    </div>
+                    <div className="gallery">
+                        <img className="gallery-img gall8" src="" alt="gallery8-img"></img>
+                        <h2 className="gallery-title">MAKE IT FISHEYE</h2>
+                    </div>
+                </div>
                 <div className="see-btn">
                     <h2 className="see-text">SEE ALL</h2>
-                </div>
-                <div className="second-cont">
-                    <div className="gallery1">
-                        <img className="gallery1-img" src="" alt="gallery1-img"></img>
-                        <h2 className="galleryTitle">DEEP EARTH</h2>
-                    </div>
-                    <div className="gallery2">
-                        <img className="gallery2-img" src="" alt="gallery2-img"></img>
-                        <h2 className="galleryTitle">NIGHT ARCADE</h2>
-                    </div>
-                    <div className="gallery3">
-                        <img className="gallery3-img" src="" alt="gallery3-img"></img>
-                        <h2 className="galleryTitle">SOCCER TEAM VR</h2>
-                    </div>
-                    <div className="gallery4">
-                        <img className="gallery4-img" src="" alt="gallery4-img"></img>
-                        <h2 className="galleryTitle">THE GRID</h2>
-                    </div>
-                    <div className="gallery5">
-                        <img className="gallery5-img" src="" alt="gallery5-img"></img>
-                        <h2 className="galleryTitle">FROM UP ABOVE VR</h2>
-                    </div>
-                    <div className="gallery6">
-                        <img className="gallery6-img" src="" alt="gallery6-img"></img>
-                        <h2 className="galleryTitle">POCKET BOREALIS</h2>
-                    </div>
-                    <div className="gallery7">
-                        <img className="gallery7-img" src="" alt="gallery7-img"></img>
-                        <h2 className="galleryTitle">THE CURIOSITY</h2>
-                    </div>
-                    <div className="gallery8">
-                        <img className="gallery8-img" src="" alt="gallery8-img"></img>
-                        <h2 className="galleryTitle">MAKE IT FISHEYE</h2>
-                    </div>
                 </div>
             </div>
         </div>
