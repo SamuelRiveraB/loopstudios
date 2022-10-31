@@ -2,6 +2,7 @@ import React from "react";
 import "./Header.css";
 import logo from "../images/logo.svg";
 import nav from "../images/icon-hamburger.svg";
+import close from "../images/icon-close.svg";
 
 function Header() {
     function navBar() {
@@ -9,29 +10,45 @@ function Header() {
         const right = document.getElementsByClassName("right-header")[0];
         if (right.style.visibility === "hidden") {
             right.style.visibility = "visible";
+            navImg.src = close;
         } else {
             right.style.visibility = "hidden";
             navImg.style.visibility = "visible";
+            navImg.src = nav;
         }
     }
 
     React.useEffect(() => {
         const navImg = document.getElementsByClassName("nav-btn")[0];
         const right = document.getElementsByClassName("right-header")[0];
+        const headMenus = ["About", "Careers", "Events", "Products", "Support"];
+        const headMenus2 = ["ABOUT", "CAREERS", "EVENTS", "PRODUCTS", "SUPPORT"];
         if (window.innerWidth < 1200) {
             navImg.style.visibility = "visible";
             right.style.visibility = "hidden";
+            for(let i = 0; i < headMenus2.length; i++) {
+                document.getElementsByClassName("menu")[i].innerText = headMenus2[i];
+            }
         } else {
             right.style.visibility = "visible";
             navImg.style.visibility = "hidden";
+            for(let i = 0; i < headMenus.length; i++) {
+                document.getElementsByClassName("menu")[i].innerText = headMenus[i];
+            }
         }
         
         function responsiveNav() {
             if (window.innerWidth < 1200) {
-                navImg.style.visibility = "visible"; 
+                navImg.style.visibility = "visible";
+                for(let i = 0; i < headMenus2.length; i++) {
+                    document.getElementsByClassName("menu")[i].innerText = headMenus2[i];
+                }
             } else {
                 right.style.visibility = "visible";
                 navImg.style.visibility = "hidden";
+                for(let i = 0; i < headMenus.length; i++) {
+                    document.getElementsByClassName("menu")[i].innerText = headMenus[i];
+                }
             }
         };
 
@@ -54,19 +71,19 @@ function Header() {
                 <div className="right-header">
                     <ul className="header-menus">
                         <li>
-                            <button className="menu">ABOUT</button>
+                            <button className="menu"></button>
                         </li>
                         <li>
-                            <button className="menu">CAREERS</button>
+                            <button className="menu"></button>
                         </li>
                         <li>
-                            <button className="menu">EVENTS</button>
+                            <button className="menu"></button>
                         </li>
                         <li>
-                            <button className="menu">PRODUCTS</button>
+                            <button className="menu"></button>
                         </li>
                         <li>
-                            <button className="menu">SUPPORT</button>
+                            <button className="menu"></button>
                         </li>
                     </ul>
                 </div>

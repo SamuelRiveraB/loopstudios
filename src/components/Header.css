@@ -54,6 +54,7 @@
 
     .menu {
         all: unset;
+        position: relative;
         cursor: pointer;
         color: #FFF;
         font-size: 6vw;
@@ -62,9 +63,16 @@
         margin: 0 0 10vw 0;
     }
 
-    .menu:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 0.5vw;
+    .menu:hover::after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        display: block;
+        height: .5vw;
+        background-color: #FFF;
+        bottom: -1vw;
+        left: 50%;
+        transform: translate(-50%);
     }
 }
 
@@ -109,21 +117,17 @@
 
 @media (min-width : 1200px) {
     .header {
-        width: 100vw;
-        height: 5vw;
-        grid-auto-rows: 5vw;
-        grid-template-columns: 20% 80%;
-    }
-
-    .left-header {
-        height: 100%;
-        padding: 0 0 0 0vw;
+        height: 8vw;
+        grid-auto-rows: 8vw;
+        grid-template-columns: 40% 60%;
     }
 
     .logo {
-        height: 2.5vw;
-        width: 6vw;
-        margin: 0vw 16vw;
+        position: relative;
+        height: 3vw;
+        width: 18vw;
+        left: -4vw;
+        margin: 0;
     }
 
     .right-header {
@@ -150,83 +154,26 @@
     }
 
     .menu {
+        position: relative;
         margin: 0 0 0vw 2vw;
-        text-align: center;
-        font-size: 2vw;
-    }
-
-    .drop-btn {
-        color: #FFF;
-        font-size: 1.2vw;
         font-weight: 700;
-        margin: 1.7vw 0 0 0;
-        left: -26vw;
+        font-size: 1.4vw;
+        left: 19vw;
     }
 
-    .drop-btn:hover {
-        text-decoration-thickness: 0.2vw;
+    .menu::after {
+        all:unset;
     }
 
-    .dropdown-img {
-        width: 0.7vw;
-        margin: 0 .5vw;
-    }
-    
-    .dropdown-content {
+    .menu:hover::after {
+        content: '';
         position: absolute;
-        width: 12vw;
-        left: 5vw;
-        border-radius: 1vw;
-        padding: 1vw 0;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-
-    .comp {
-        left: 13vw;
-    }
-
-    .conn {
-        left: 22vw;
-    }
-
-    .hidden {
-        z-index: 1000;
-    }
-
-    .dropdown-link {
-        color: hsl(240, 10%, 16%);
-        font-size: 1vw;
-        left: 1.5vw;
-        margin: 0.6vw 0;
-        transform: unset;
-    }
-
-    .line {
-        display: none;
-    }
-    
-    .login {
-        position: relative;
-        color: #FFF;
-        bottom: 1.5vw;
-        left: 15vw;
-        width: 2vw;
-        font-size: 1.2vw;
-    }
-
-    .sign {
-        position: relative;
-        background: #FFF;
-        bottom: 4.9vw;
-        left: 24vw;
-        border-radius: 80px;
-        color: hsl(353, 100%, 62%);
-        font-size: 1.2vw;
-        padding: .8vw 2.3vw;
-        margin: 1vw;
-    }
-
-    .sign:hover {
-        color: #FFF;
+        width: 50%;
+        display: block;
+        height: .25vw;
+        background-color: #FFF;
+        bottom: -1vw;
+        left: 50%;
+        transform: translate(-50%);
     }
 }

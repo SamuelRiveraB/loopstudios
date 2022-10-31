@@ -32,10 +32,18 @@ function Footer() {
                 </div>
                 <div className="footer-right">
                     <div className="icons">
-                        <img className="social-icon" src={fb} alt="social-icon"></img>
-                        <img className="social-icon" src={tw} alt="social-icon"></img>
-                        <img className="social-icon" src={pi} alt="social-icon"></img>
-                        <img className="social-icon" src={ig} alt="social-icon"></img>
+                        <div className="icon-cont">
+                            <img className="social-icon" src={fb} alt="social-icon"></img>
+                        </div>
+                        <div className="icon-cont">
+                            <img className="social-icon" src={tw} alt="social-icon"></img>
+                        </div>
+                        <div className="icon-cont">
+                            <img className="social-icon" src={pi} alt="social-icon"></img>
+                        </div>
+                        <div className="icon-cont">
+                            <img className="social-icon" src={ig} alt="social-icon"></img>
+                        </div>
                     </div>
                     <div className="copyright">
                         <p className="rights">© 2021 Loopstudios. All rights reserved.</p>
